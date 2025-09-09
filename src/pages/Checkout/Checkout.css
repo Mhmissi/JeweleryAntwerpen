@@ -121,9 +121,38 @@
 }
 
 @media (max-width: 768px) {
+  .checkout-page {
+    padding: 1.5rem 0;
+  }
+  
+  .checkout-page .container {
+    padding: 0 var(--spacing-3);
+  }
+  
+  .checkout-page h1 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-6);
+  }
+  
   .checkout-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .checkout-form {
+    padding: 1.5rem;
+  }
+  
+  .checkout-form h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkout-form input,
+  .checkout-form select {
+    padding: 10px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 44px;
   }
   
   .form-row {
@@ -133,6 +162,113 @@
   
   .order-summary {
     position: static;
+    padding: 1.5rem;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.2rem;
+  }
+  
+  .place-order-btn {
+    padding: 12px;
+    font-size: 1rem;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 1rem 0;
+  }
+  
+  .checkout-page .container {
+    padding: 0 var(--spacing-2);
+  }
+  
+  .checkout-page h1 {
+    font-size: 1.75rem;
+  }
+  
+  .checkout-form {
+    padding: 1rem;
+  }
+  
+  .checkout-form h3 {
+    font-size: 1.1rem;
+  }
+  
+  .checkout-form input,
+  .checkout-form select {
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .order-summary {
+    padding: 1rem;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .summary-item {
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .summary-item.total {
+    font-size: 1.1rem;
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  
+  .place-order-btn {
+    padding: 12px;
+    font-size: 0.95rem;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 320px) {
+  .checkout-page .container {
+    padding: 0 var(--spacing-1);
+  }
+  
+  .checkout-page h1 {
+    font-size: 1.5rem;
+  }
+  
+  .checkout-form {
+    padding: 0.75rem;
+  }
+  
+  .checkout-form h3 {
+    font-size: 1rem;
+  }
+  
+  .checkout-form input,
+  .checkout-form select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-summary {
+    padding: 0.75rem;
+  }
+  
+  .order-summary h3 {
+    font-size: 1rem;
+  }
+  
+  .summary-item {
+    font-size: 0.85rem;
+  }
+  
+  .place-order-btn {
+    font-size: 0.9rem;
   }
 }
 

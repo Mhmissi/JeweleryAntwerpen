@@ -1214,3 +1214,216 @@ img {
     font-weight: 300;
   }
 }
+
+/* Enhanced Mobile Responsiveness */
+/* Small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-2);
+  }
+  
+  .hero {
+    padding: var(--spacing-12) 0 var(--spacing-8) 0;
+    min-height: 80vh;
+  }
+  
+  .hero-content {
+    padding: 0 var(--spacing-2);
+    gap: var(--spacing-6);
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-2xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .hero-stat {
+    padding: var(--spacing-3);
+  }
+  
+  .hero-stat-number {
+    font-size: var(--font-size-xl);
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-3);
+  }
+  
+  .hero-btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    min-height: 48px;
+    padding: var(--spacing-3) var(--spacing-6);
+  }
+  
+  .hero-image-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+  
+  .feature-item {
+    padding: var(--spacing-4);
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .feature-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .feature-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .feature-description {
+    font-size: var(--font-size-sm);
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+  
+  .product-card {
+    margin: 0;
+  }
+  
+  .product-image {
+    height: 140px;
+  }
+  
+  .product-info {
+    padding: var(--spacing-4);
+  }
+  
+  .product-name {
+    font-size: var(--font-size-base);
+  }
+  
+  .product-price {
+    font-size: var(--font-size-lg);
+  }
+  
+  .product-btn {
+    min-height: 44px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--spacing-6);
+  }
+  
+  .about-image-placeholder {
+    width: 280px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .about-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-3);
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    min-height: 48px;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .section-description {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Extra small mobile devices (320px and below) */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 var(--spacing-1);
+  }
+  
+  .hero {
+    padding: var(--spacing-8) 0 var(--spacing-6) 0;
+    min-height: 70vh;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .hero-description {
+    font-size: var(--font-size-xs);
+  }
+  
+  .hero-image-container {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .hero-btn {
+    min-height: 44px;
+    padding: var(--spacing-2) var(--spacing-4);
+    font-size: var(--font-size-sm);
+  }
+  
+  .feature-item {
+    padding: var(--spacing-3);
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .product-image {
+    height: 120px;
+  }
+  
+  .about-image-placeholder {
+    width: 240px;
+    height: 180px;
+  }
+}

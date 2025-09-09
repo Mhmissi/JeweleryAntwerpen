@@ -89,16 +89,157 @@
 }
 
 @media (max-width: 768px) {
-  .about-page h1 {
-    font-size: 2rem;
+  .about-page {
+    padding: 1.5rem 0;
   }
   
-  .values-grid {
-    grid-template-columns: 1fr;
+  .about-page .container {
+    padding: 0 var(--spacing-3);
+  }
+  
+  .about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    gap: 2rem;
   }
   
   .about-section {
     padding: 1.5rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .value-item {
+    padding: 1rem;
+  }
+  
+  .value-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .value-item p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-info {
+    padding: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 1rem 0;
+  }
+  
+  .about-page .container {
+    padding: 0 var(--spacing-2);
+  }
+  
+  .about-page h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content {
+    gap: 1.5rem;
+  }
+  
+  .about-section {
+    padding: 1rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .about-section p {
+    font-size: 0.9rem;
+  }
+  
+  .values-grid {
+    gap: 0.75rem;
+  }
+  
+  .value-item {
+    padding: 0.75rem;
+  }
+  
+  .value-item h3 {
+    font-size: 1rem;
+  }
+  
+  .value-item p {
+    font-size: 0.85rem;
+  }
+  
+  .contact-info {
+    padding: 0.75rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-page .container {
+    padding: 0 var(--spacing-1);
+  }
+  
+  .about-page h1 {
+    font-size: 1.5rem;
+  }
+  
+  .about-section {
+    padding: 0.75rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .about-section p {
+    font-size: 0.85rem;
+  }
+  
+  .value-item {
+    padding: 0.5rem;
+  }
+  
+  .value-item h3 {
+    font-size: 0.95rem;
+  }
+  
+  .value-item p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-info {
+    padding: 0.5rem;
+  }
+  
+  .contact-info p {
+    font-size: 0.8rem;
   }
 }
 

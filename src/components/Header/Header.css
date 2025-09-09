@@ -461,3 +461,136 @@
     font-weight: 300;
   }
 }
+
+/* Enhanced Mobile Responsiveness */
+/* Small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 var(--spacing-2);
+    height: var(--spacing-16);
+  }
+  
+  .logo-text {
+    font-size: var(--font-size-base);
+  }
+  
+  .search-dropdown {
+    min-width: 280px;
+    right: -20px;
+  }
+  
+  .user-dropdown {
+    min-width: 250px;
+    right: -20px;
+  }
+  
+  .action-button {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .cart-badge {
+    font-size: 10px;
+    min-width: 16px;
+    height: 16px;
+    padding: 1px 4px;
+  }
+  
+  .search-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 40px;
+  }
+  
+  .search-submit {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  
+  .mobile-nav-menu {
+    padding: var(--spacing-3);
+    gap: var(--spacing-1);
+  }
+  
+  .mobile-nav-link {
+    padding: var(--spacing-2) var(--spacing-3);
+    min-height: 40px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .login-button {
+    padding: var(--spacing-1) var(--spacing-3);
+    min-height: 40px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .login-text {
+    display: none;
+  }
+}
+
+/* Extra small mobile devices (320px and below) */
+@media (max-width: 320px) {
+  .header-container {
+    padding: 0 var(--spacing-1);
+    height: var(--spacing-14);
+  }
+  
+  .logo-text {
+    font-size: var(--font-size-sm);
+  }
+  
+  .action-button {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .search-dropdown {
+    min-width: 260px;
+    right: -10px;
+  }
+  
+  .user-dropdown {
+    min-width: 220px;
+    right: -10px;
+  }
+  
+  .search-input {
+    min-height: 36px;
+    padding: var(--spacing-2);
+  }
+  
+  .search-submit {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+  
+  .mobile-nav-link {
+    padding: var(--spacing-1) var(--spacing-2);
+    min-height: 36px;
+    font-size: var(--font-size-xs);
+  }
+  
+  .login-button {
+    padding: var(--spacing-1) var(--spacing-2);
+    min-height: 36px;
+    font-size: var(--font-size-xs);
+  }
+}
