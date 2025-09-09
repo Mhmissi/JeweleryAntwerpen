@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read access to products for everyone (public catalog)
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true; // For development - restrict this in production
+    }
+    
+    // Allow read/write access to orders
+    match /orders/{orderId} {
+      allow read, write: if true; // For development
+    }
+    
+    // Allow read/write access to users
+    match /users/{userId} {
+      allow read, write: if true; // For development
+    }
+  }
+}
+
