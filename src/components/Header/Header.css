@@ -292,49 +292,122 @@
 /* Mobile Menu Toggle - Always visible on mobile */
 .mobile-menu-toggle {
   display: flex;
+  transition: all var(--transition-fast);
 }
+
+.mobile-menu-toggle.active {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-accent-gold);
+}
+
+
+
 
 /* Mobile Navigation */
 .mobile-nav {
   display: block;
   background-color: var(--color-bg-primary);
-  border-top: 1px solid var(--color-border);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-100%);
-  transition: transform var(--transition-normal);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
   position: absolute;
   top: 100%;
-  left: 0;
   right: 0;
   z-index: var(--z-dropdown);
+  backdrop-filter: blur(10px);
+  min-width: 280px;
+  margin-top: var(--spacing-2);
+  animation: dropdownFadeIn 0.2s ease-out;
 }
 
 .mobile-nav.open {
   transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .mobile-nav-menu {
   display: flex;
   flex-direction: column;
   padding: var(--spacing-4);
-  gap: var(--spacing-2);
+  gap: var(--spacing-4);
+  max-height: 70vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.mobile-nav-section-title {
+  font-size: 10px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--spacing-1) 0;
+  padding: 0 var(--spacing-2);
 }
 
 .mobile-nav-link {
-  display: block;
-  padding: var(--spacing-3) var(--spacing-4);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-3);
   color: var(--color-text-primary);
   text-decoration: none;
   border-radius: var(--radius-md);
-  transition: background-color var(--transition-fast);
+  transition: all var(--transition-fast);
   font-weight: var(--font-weight-medium);
-  min-height: 44px;
-  display: flex;
-  align-items: center;
+  min-height: 40px;
+  position: relative;
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+}
+
+.mobile-nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.mobile-nav-link:hover::before {
+  left: 100%;
 }
 
 .mobile-nav-link:hover {
   background-color: var(--color-bg-secondary);
+  color: var(--color-accent-gold);
+  transform: translateX(4px);
+}
+
+.mobile-nav-link:active {
+  transform: scale(0.98);
+  background-color: var(--color-bg-tertiary);
+}
+
+.mobile-nav-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.mobile-nav-link:hover .mobile-nav-icon {
+  transform: scale(1.1);
 }
 
 /* Responsive Design - Progressive Enhancement */
@@ -378,6 +451,7 @@
   .header-container {
     padding: 0 var(--spacing-4);
   }
+  
   
   .desktop-nav {
     display: flex;
@@ -484,6 +558,10 @@
     right: -20px;
   }
   
+  .nav-dropdown-container {
+    display: none;
+  }
+  
   .action-button {
     width: 40px;
     height: 40px;
@@ -515,15 +593,35 @@
     min-height: 40px;
   }
   
+  .mobile-nav {
+    min-width: 260px;
+    right: var(--spacing-2);
+  }
+  
   .mobile-nav-menu {
     padding: var(--spacing-3);
+    gap: var(--spacing-3);
+  }
+  
+  .mobile-nav-section {
     gap: var(--spacing-1);
+  }
+  
+  .mobile-nav-section-title {
+    font-size: 9px;
+    margin-bottom: var(--spacing-1);
   }
   
   .mobile-nav-link {
     padding: var(--spacing-2) var(--spacing-3);
     min-height: 40px;
     font-size: var(--font-size-sm);
+    gap: var(--spacing-2);
+  }
+  
+  .mobile-nav-icon {
+    width: 16px;
+    height: 16px;
   }
   
   .login-button {

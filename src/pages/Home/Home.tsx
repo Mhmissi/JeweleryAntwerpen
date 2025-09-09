@@ -77,23 +77,20 @@ const Home: React.FC = () => {
         </div>
         <div className="hero-content">
           <div className="hero-text">
-            <div className="hero-badge">
-              <span className="hero-badge-icon">✨</span>
-              <span>Authentic Belgian Craftsmanship</span>
-            </div>
+            <div className="hero-subtitle">Luxury Jewelry Collection</div>
             <h1 className="hero-title">
-              Premium Jewelry with
-              <span className="hero-highlight"> Belgian Craftsmanship</span>
+              Timeless Elegance
+              <span className="hero-highlight"> Crafted in Belgium</span>
             </h1>
             <p className="hero-description">
-              Discover our exclusive collection of fine jewelry, crafted with precision 
-              and elegance. From engagement rings to luxury watches, each piece tells 
-              a story of timeless beauty.
+              Discover our exclusive collection of fine jewelry, where traditional 
+              Belgian craftsmanship meets modern design. Each piece is carefully 
+              crafted to tell your unique story.
             </p>
             <div className="hero-stats">
               <div className="hero-stat">
                 <span className="hero-stat-number">35+</span>
-                <span className="hero-stat-label">Years Experience</span>
+                <span className="hero-stat-label">Years of Excellence</span>
               </div>
               <div className="hero-stat">
                 <span className="hero-stat-number">10K+</span>
@@ -101,18 +98,18 @@ const Home: React.FC = () => {
               </div>
               <div className="hero-stat">
                 <span className="hero-stat-number">100%</span>
-                <span className="hero-stat-label">Authentic</span>
+                <span className="hero-stat-label">Authentic Quality</span>
               </div>
             </div>
             <div className="hero-actions">
               <Link to="/products" className="btn btn-primary hero-btn">
-                <span>Shop Collection</span>
+                <span>Explore Collection</span>
                 <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
               <Link to="/about" className="btn btn-outline hero-btn">
-                <span>Learn More</span>
+                <span>Our Story</span>
                 <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
