@@ -17,7 +17,8 @@ const Orders = React.lazy(() => import('./pages/Orders/Orders'));
 const Wishlist = React.lazy(() => import('./pages/Wishlist/Wishlist'));
 const About = React.lazy(() => import('./pages/About/About'));
 const Contact = React.lazy(() => import('./pages/Contact/Contact'));
-const Admin = React.lazy(() => import('./pages/Admin/Admin'));
+// Admin temporarily disabled until authentication is implemented
+// const Admin = React.lazy(() => import('./pages/Admin/Admin'));
 const NotFound = React.lazy(() => import('./pages/NotFound/NotFound'));
 
 const App: React.FC = () => {
@@ -39,7 +40,10 @@ const App: React.FC = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            {/* Admin route - temporarily disabled until authentication is implemented */}
+            {/* TODO: Add admin role check when authentication is implemented
             <Route path="/admin" element={<Admin />} />
+            */}
             
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
